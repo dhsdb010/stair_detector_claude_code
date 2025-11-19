@@ -1,0 +1,63 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		STAIRDET001 /* StairDetectorApp.swift */ = {isa = PBXBuildFile; };
+		STAIRDET002 /* ContentView.swift */ = {isa = PBXBuildFile; };
+		STAIRDET003 /* Assets.xcassets */ = {isa = PBXBuildFile; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		STAIRDET101 /* StairDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StairDetector.app; };
+		STAIRDET102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		STAIRDET201 = {
+			isa = PBXGroup;
+			children = (
+				STAIRDET202 /* StairDetector */,
+			);
+			sourceTree = "<group>";
+		};
+		STAIRDET202 /* StairDetector */ = {
+			isa = PBXGroup;
+			children = (
+				STAIRDET102 /* Info.plist */,
+			);
+			path = StairDetector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin XCBuildConfiguration section */
+		STAIRDET301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.stairdetector.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		STAIRDET302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.stairdetector.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+	};
+	rootObject = STAIRDET400 /* Project object */;
+}

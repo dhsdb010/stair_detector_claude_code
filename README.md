@@ -2,6 +2,15 @@
 
 A phone-based safety system that uses computer vision and motion sensors to detect stairs and warn distracted users, preventing accidents while walking and using mobile devices.
 
+## Platform Support
+
+- 🐍 **Python Desktop**: Cross-platform (Windows, macOS, Linux) with webcam support
+- 📱 **iOS Native**: Full-featured iOS app with haptic feedback and native sensors
+
+See platform-specific READMEs:
+- [Python/Desktop Documentation](README.md) (this file)
+- [iOS App Documentation](ios/README.md)
+
 ## Overview
 
 Walking while distracted by a phone is a common cause of accidents, especially near stairs. This system combines:
@@ -35,13 +44,25 @@ Walking while distracted by a phone is a common cause of accidents, especially n
 
 ## Installation
 
-### Prerequisites
+### For iOS
+
+See the [iOS README](ios/README.md) for complete iOS setup instructions.
+
+Quick start:
+```bash
+cd ios/StairDetector
+open StairDetector.xcodeproj  # Opens in Xcode
+```
+
+### For Python/Desktop
+
+#### Prerequisites
 
 - Python 3.7 or higher
 - Camera device (webcam or phone camera)
 - (Optional) Access to device gyroscope/accelerometer
 
-### Setup
+#### Setup
 
 1. Clone the repository:
 ```bash
@@ -250,16 +271,27 @@ The alert system implements:
 
 ## Mobile Deployment
 
-While this implementation runs on desktop with a webcam, it can be adapted for mobile platforms:
+### iOS (✅ Available Now!)
 
-### Android
+**A native iOS app is included in this repository!** See [ios/README.md](ios/README.md) for details.
+
+Features:
+- Native Swift + SwiftUI implementation
+- Vision framework for stair detection
+- CoreMotion for sensor access
+- Haptic feedback and audio alerts
+- Optimized battery performance
+
+Quick start:
+```bash
+cd ios/StairDetector
+open StairDetector.xcodeproj
+```
+
+### Android (Future)
 - Use **Kivy** or **BeeWare** for Python-based mobile apps
 - Access sensors via **Pyjnius** (Python-Java bridge)
 - Alternative: Rewrite in Kotlin/Java using OpenCV Android SDK
-
-### iOS
-- Use **Kivy** or **BeeWare** for Python-based apps
-- Alternative: Rewrite in Swift using Vision framework
 
 ### React Native / Flutter
 - Python backend as a service (REST API)
