@@ -1,0 +1,2 @@
+# stair_detector_claude_code
+stair_detector
